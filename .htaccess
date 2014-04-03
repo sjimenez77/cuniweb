@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # Ruta al inicio de la aplicación: /web/index.php
+    RewriteRule ^(.*)$ web/index_dev.php [QSA,L]
+    # Redirección de carpetas de imágenes, estilos y js para las plantillas TWIG
+    Redirect img /web/img
+    Redirect css /web/css
+    Redirect js /web/js
+</IfModule>
