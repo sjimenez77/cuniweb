@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{% block lang %}{% endblock %}">
+    <head>
+        <title id="{% block title_id %}{% endblock %}">{{ app.title }} | {% block title %}{% endblock %}</title>
+        {% block meta %}{% endblock %}
+        {% block stylesheets %}{% endblock %}
+        {% block js_head %}{% endblock %}
+        {% block ie %}{% endblock %}
+        {% block icons %}{% endblock %}        
+    </head>
+    <body id="{% block id '' %}" class="{% block class '' %}">
+        {% block body %}{% endblock %}
+        {% block footer %}{% endblock %}
+        {% block js %}{% endblock %}
+    </body>
+</html>
