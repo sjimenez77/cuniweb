@@ -13,7 +13,7 @@ $app->register(new MonologServiceProvider(), array(
 // **********************************************************************************
  
 // Título de la aplicación
-$app['title'] = 'Cunicultura';
+$app['title'] = 'Cunicultura Villamalea S.C.L.';
 
 // Destinatarios del formulario de contacto: comercial@logicom.es
 $app['email_comercial'] = 'comercial@logicom.es';
